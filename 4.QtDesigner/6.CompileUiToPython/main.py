@@ -1,3 +1,6 @@
+# NOTE: Use below command to convert .ui file to .py file
+# pyside6-uic widget.ui > ui_widget.py
+
 import sys
 
 from PySide6 import QtWidgets

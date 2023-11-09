@@ -11,7 +11,10 @@ class RocWidget (QWidget):
         button2.clicked.connect(self.button2_clicked)
 
 
-        button_layout = QHBoxLayout()
+        # Horizontally aligned buttons
+        # button_layout = QHBoxLayout()
+
+        button_layout = QVBoxLayout()
         button_layout.addWidget(button1)
         button_layout.addWidget(button2)
 

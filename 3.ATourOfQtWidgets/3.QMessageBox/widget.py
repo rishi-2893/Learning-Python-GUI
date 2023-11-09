@@ -46,11 +46,18 @@ class Widget(QWidget):
         message.setDefaultButton(QMessageBox.Ok)
 
         #Show the message box
-        ret = message.exec()
+        # new window thus a new event loop therefore exec()
+        ret = message.exec() 
         if ret == QMessageBox.Ok : 
             print("User chose OK")
         else : 
             print ("User chose Cancel")
+
+
+    # Information
+    # As above code is too much verbose
+    # Pyside provides eaiser way to show message box with different buttons and icons
+
 
 
     #Critical        

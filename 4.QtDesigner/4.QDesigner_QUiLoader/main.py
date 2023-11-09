@@ -5,7 +5,10 @@ from PySide6.QtUiTools import QUiLoader
 loader = QUiLoader() #Set up a loader object
 
 app = QtWidgets.QApplication(sys.argv)
-window = loader.load("widget.ui", None) #Load the ui - happens at run time!
+
+#Load the ui - happens at run time!
+# Performance penalty! Avoid this in production
+window = loader.load("widget.ui", None)
 
 def do_something() :
     print(window.full_name_line_edit.text(),"is a ", window.occupation_line_edit.text())

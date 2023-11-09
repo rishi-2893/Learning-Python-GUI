@@ -2,9 +2,14 @@ from PySide6.QtWidgets import QApplication, QWidget
 
 import sys
 
-app = QApplication(sys.argv)
+# Create QApplication instance
+app = QApplication(sys.argv) 
 
+# Create a QWidget instance 
 window = QWidget()
-window.show()
 
+# Show the window
+window.show()  
+
+# Start event loop
 app.exec()

@@ -18,6 +18,12 @@ class Widget(QWidget):
 
 
         grid_layout = QGridLayout()
+        """
+        row: int,
+        column: int,
+        rowSpan: int,
+        columnSpan: int
+        """
         grid_layout.addWidget(button_1,0,0)
         grid_layout.addWidget(button_2,0,1,1,2) #Take up 1 row and 2 columns
         grid_layout.addWidget(button_3,1,0,2,1) #Take up 2 rows and 1 column
